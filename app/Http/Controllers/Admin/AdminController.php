@@ -26,7 +26,7 @@ class AdminController extends Controller
 
         $settings = WebsiteSetting::first();
         $visible_sections = count(unserialize($settings->page_filter));
-        $hidden_sections = 8 - $visible_sections;
+        $hidden_sections = 9 - $visible_sections;
         $website_color = $this->getColorName($settings->color);
 
         $visitors = Visitor::all();

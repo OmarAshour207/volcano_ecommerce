@@ -11,7 +11,7 @@ class WebsiteSettingsSeed extends Seeder
      */
     public function run()
     {
-        $filters = ['about', 'contacts','our_services', 'testimonials', 'latest_blog'];
+        $filters = ['offers', 'products', 'limited_offers', 'categories', 'about', 'testimonials', 'services', 'blogs', 'subscribe_area'];
         \App\Models\WebsiteSetting::create([
             'page_filter'   => serialize($filters)
         ]);

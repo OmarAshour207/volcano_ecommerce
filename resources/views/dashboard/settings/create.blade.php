@@ -33,44 +33,12 @@
                     <div class="form-group">
                         <label for="filter_page">{{ __('admin.visible') }} {{ __('admin.website_sections') }} </label><br>
                         <select id="filter_page" data-toggle="select" name="filter_page[]" class="form-control" multiple>
-                            {{-- About Section --}}
-                            <option value="about"> {{ __('admin.about') }} </option>
-                            {{-- Our Projects Section --}}
-                            <option value="our_projects"> {{ __('home.our_projects') }} </option>
-                            {{-- Contacts Section --}}
-                            <option value="contacts"> {{ __('admin.contacts') }} </option>
-                            {{-- Our Services Section --}}
-                            <option value="our_services"> {{ __('home.our_services') }} </option>
-                            {{-- Statistics Section --}}
-                            <option value="stats"> {{ __('home.stat') }} </option>
-                            {{-- Team Members Section --}}
-                            <option value="team_members"> {{ __('admin.team_members') }} </option>
-                            {{-- Testimonials Section --}}
-                            <option value="testimonials"> {{ __('admin.testimonials') }} </option>
-                            {{-- Latest Blog Section --}}
-                            <option value="latest_blog"> {{ __('home.latest_blog') }} </option>
-                        </select>
-                    </div>
-
-                    @php
-                        $colors = [
-                            'orange'        => '1',
-                            'red'           => '2',
-                            'yellow'        => '3',
-                            'blue'          => '4',
-                            'red_dark'      => '5',
-                            'green'         => '6',
-                            'sky'           => '7',
-                            'orange_dark'   => '8',
-                            ];
-                    @endphp
-                    <div class="form-group">
-                        <label for="website_color">{{ __('admin.settings_website') }} {{ __('admin.website_color') }} </label><br>
-                        <select id="website_color" data-toggle="select" name="color" class="form-control">
-                            <option value=""> {{ __('admin.choose_color') }} </option>
-                            @foreach($colors as $index => $color)
-                                <option value="{{ $color }}"> {{ $index+1 }} </option>
-                            @endforeach
+                            @php
+                                $sections= ['offers', 'products', 'limited_offers', 'categories', 'about', 'testimonials', 'services', 'blogs', 'subscribe_area'];
+                            @endphp
+                            @for($i = 0; $i < count($sections); $i++)
+                                <option value="{{ $sections[$i] }}"> {{ __('admin.' . $sections[$i]) }} </option>
+                            @endfor
                         </select>
                     </div>
 

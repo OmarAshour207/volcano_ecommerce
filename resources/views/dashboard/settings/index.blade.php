@@ -33,17 +33,17 @@
                                 </div>
                             </th>
 
-                            <th style="width: 30px;" > {{ trans('admin.id') }} </th>
-                            <th style="width: 40px;"> {{ trans('admin.about') }} </th>
-                            <th style="width: 40px;"> {{ trans('home.our_projects') }} </th>
-                            <th style="width: 40px;"> {{ trans('admin.contacts') }} </th>
-                            <th style="width: 120px;" > {{ trans('home.our_services') }} </th>
-                            <th style="width: 120px;" > {{ trans('home.stat') }} </th>
-                            <th style="width: 30px;" > {{ trans('admin.team_members') }} </th>
-                            <th style="width: 120px;" >{{ trans('admin.testimonials') }}</th>
-                            <th style="width: 30px;" > {{ trans('home.latest_blog') }} </th>
-                            <th style="width: 30px;" > {{ trans('admin.color') }} </th>
-                            <th style="width: 30px;" > {{ trans('admin.action') }} </th>
+                            <th style="width: 30px;"> {{ trans('admin.id') }} </th>
+                            <th style="width: 40px;"> {{ 'Offers' }} </th>
+                            <th style="width: 40px;"> {{ 'Products' }} </th>
+                            <th style="width: 40px;"> {{ 'Limited Offers' }} </th>
+                            <th style="width: 120px;"> {{ 'Categories' }} </th>
+                            <th style="width: 120px;"> {{ 'About' }} </th>
+                            <th style="width: 30px;"> {{ 'Testimonials' }} </th>
+                            <th style="width: 120px;"> {{ 'Services' }}</th>
+                            <th style="width: 30px;"> {{ 'Blogs' }} </th>
+                            <th style="width: 30px;"> {{ 'Subscribe Area' }} </th>
+                            <th style="width: 30px;"> {{ 'Action' }} </th>
                         </tr>
                         </thead>
                         <tbody class="list" id="companies">
@@ -60,7 +60,7 @@
                                     </td>
 
                                     @php
-                                    $sections = ['about', 'our_projects', 'contacts','our_services', 'stat', 'team_members', 'testimonials', 'latest_blog'];
+                                    $sections = ['offers', 'products', 'limited_offers', 'categories', 'about', 'testimonials', 'services', 'blogs', 'subscribe_area'];
                                     $pageFilter = unserialize($websiteSettings->page_filter);
                                     @endphp
                                     @for($i = 0;$i < count($sections);$i++)
@@ -83,34 +83,12 @@
                                         @endif
                                     @endfor
 
-
-                                    @php
-                                        $colors = [
-                                            1     => 'Orange',
-                                            2     => 'Red',
-                                            3     => 'Yellow',
-                                            4     => 'Blue',
-                                            5     => 'Red Dark',
-                                            6     => 'Green',
-                                            7     => 'Sky',
-                                            8     => 'Orange Dark',
-                                            ];
-                                    @endphp
-                                    <td style="width: 30px;">
-                                        <div class="badge badge-soft-dark">
-                                            @foreach($colors as $index => $color)
-                                                @if ($index == $websiteSettings->color)
-                                                    {{ $color }}
-                                                @endif
-                                            @endforeach
-                                        </div>
-                                    </td>
-
                                     <td>
                                         <a href="{{ route('website-settings.edit', $websiteSettings->id) }}" class="btn btn-sm btn-link">
                                             <i class="fa fa-edit fa-2x"></i>
                                         </a>
                                     </td>
+                                </tr>
 
                         @else
                             <h1> {{ trans('admin.no_records') }} </h1>

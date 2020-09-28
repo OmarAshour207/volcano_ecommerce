@@ -7,7 +7,7 @@
                 <div class="flex">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb mb-0">
-                            <li class="breadcrumb-item active" aria-current="page"><i class="material-icons icon-20pt"> {{ trans('admin.home') }} </i></li>
+                            <li class="breadcrumb-item active" aria-current="page"><i class="material-icons icon-20pt">home</i></li>
                         </ol>
                     </nav>
                     <h1 class="m-0"> {{ trans('admin.dashboard') }} </h1>
@@ -49,11 +49,6 @@
                     <div class="mb-1"><i class="icon-muted icon-40pt fa fa-eye-slash"></i></div>
                     <div class="text-amount">{{ $hidden_sections }}</div>
                     <div class="card-header__title  mb-2">{{ __('admin.hidden_sections') }}</div>
-                </div>
-                <div class="card card-body text-center">
-                    <div class="mb-1"><i class="icon-muted icon-40pt fa fa-paint-brush"></i></div>
-                    <div class="text-amount">{{ $website_color }}</div>
-                    <div class="card-header__title  mb-2">{{ __('admin.website_color') }}</div>
                 </div>
                 <div class="card card-body text-center">
                     <div class="mb-1"><i class="icon-muted icon-40pt fa fa-user-friends"></i></div>

@@ -21,7 +21,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-6 col-sm-6 order-4 order-lg-2">
+            <div class="col-lg-3 col-md-6 col-sm-6 order-4 order-lg-2">
                 <div class="footer-widget footer-list mt-30">
                     <h4 class="title">Custom Link</h4>
                     <ul>
@@ -38,38 +38,13 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6  order-3">
-                <div class="footer-widget footer-list mt-30 ml-85">
-                    <h4 class="title">Account Info</h4>
-                    <ul>
-                        <li><a href="#">Personal Info</a></li>
-                        <li><a href="#">Signup</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Credit Slips</a></li>
-                        <li><a href="#">Addresses</a></li>
-                        <li><a href="#">Order history</a></li>
-                        <li><a href="#">My account</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-7 order-2 order-lg-4">
+
+            <div class="col-lg-5 col-md-6 col-sm-7 order-2 order-lg-4">
                 <div class="footer-widget footer-download mt-30">
-                    <h4 class="title">Download Our App</h4>
+
                     <ul>
-                        <li>
-                            <a href="#">
-                                <i class="ti-android"></i>
-                                <span>get it on</span>
-                                <p>Goole play</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="ti-apple"></i>
-                                <span>get it on</span>
-                                <p>App Store</p>
-                            </a>
-                        </li>
+
+
                     </ul>
                     <span>Store Location</span>
                     <p>{{ setting('en_address') }}</p>
@@ -82,7 +57,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="footer-copyright-item d-block d-md-flex justify-content-between align-items-center">
-                        <p>All copyright © reserved by Fuznet 2020</p>
+                        <p>All copyright © reserved by volcano</p>
                         <ul>
                             <li><a href="#"><img src="{{ asset('site/images/footer-pay-1.png') }}" alt=""></a></li>
                             <li><a href="#"><img src="{{ asset('site/images/footer-pay-2.png') }}" alt=""></a></li>

@@ -149,7 +149,11 @@
             <div class="d-flex align-items-center sidebar-p-a border-bottom sidebar-account">
                 <a href="{{ route('edit.profile') }}" class="flex d-flex align-items-center text-underline-0 text-body">
                     <span class="avatar avatar-sm mr-2">
-                        <img src="{{ auth()->user() ->user_image}}" alt="avatar" class="avatar-img rounded-circle">
+                        @if(auth()->user()->image != null)
+                            <img src="{{ auth()->user()->user_image }}" alt="avatar" class="avatar-img rounded-circle">
+                        @else
+                            <img src="https://avatars.abstractapi.com/v1/?api_key=1768dfbe3071477eb60bad2f86703a2c&name={{ auth()->user()->name }}" alt="avatar" class="avatar-img rounded-circle">
+                        @endif
                     </span>
                     <span class="flex d-flex flex-column">
                         <strong>{{ auth()->user()->name }}</strong>

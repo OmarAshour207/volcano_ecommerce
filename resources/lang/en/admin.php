@@ -164,5 +164,8 @@ return [
     'offer_price'           => 'Offer price',
     'product'               => 'Product',
     'rate'                  => 'Rate',
-    'brand'                 => 'Brand'
+    'brand'                 => 'Brand',
+    'limited_offers'        => 'Limited Offers',
+    'subscribe_area'        => 'Subscribe Area',
+    'choose_color'          => 'Choose Color',
 ];

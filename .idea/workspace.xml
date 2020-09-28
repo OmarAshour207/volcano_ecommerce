@@ -1,7 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1fdd2f2-20f9-4a83-ad4c-b70794851664" name="Default Changelist" comment="" />
+    <list default="true" id="c1fdd2f2-20f9-4a83-ad4c-b70794851664" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/aboutus/2ekW2T4xpPqnCk92HaDB1Sc3YMYKsxoPg2NG9itJ.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/aboutus/xFJEIfVzWbpTA22T5eUKIVjMvMgyJMQrOK5jlt5P.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/blogs/1DTxdnLSYnriyZFmRgSrifAU2jn7dbvM1nEdGXNP.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/blogs/E9BIbBPU142T06AwET2KTBihVcXjNugvElzX9eBD.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/blogs/p3eWhhW5dlyfJ1jucRy9UtIJ9B1OsPVrwBpcW1x4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/blogs/rBti2WbbuFHs46Sxx5lUGSxEJa5fQ6BDdGaSIGad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/blogs/tbbixGc1qfEoKXGmZf6m8Axb3JLF4RrJ23K65GjT.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/logos/dGt2TjRdHQNMsOH6WN1KEMOUJyddzfviraPvsHAL.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/offers/0gXCfKMYmVowjeiYxjwhyNSq5EBhzUEqKB5Mg66n.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/offers/BnFCrtgWioRph3eaR8OdxoPfGwE4NSojM1JcMLVW.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/offers/xhr2rwy9BfBKXG9695B1uqYsSVuQPtloEAzIQRks.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/products/4SgRwKrOzkIfFgpjQWmnez2Me1kKfdkWz5uCfm4n.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/products/BdBx7lBaEFr7ZNtAhFT6WIxS4ViYwm8vRq1PMpy7.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/products/EsMqJQ1qdt5m0InlZavRpi8Xv2TIdcwIKD5OjEUZ.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/products/IytikcyuzJRt1uYWCsNaoSbhZuqYGVoAE0PitAy4.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/products/N4BHxpMF90dOSgFTSPXC5O3zjFKEjqh38j5ASmzz.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/products/P9L5rDVKl8cmgmM8lzIEpIwigWHL17CLAyQmVARu.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/products/TYDuoz29CjPSTScLGsG4nYhVC5vdeVngcFsp2gld.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/products/c3A23E7jivGrlrpp7L2OqnO7ObawSVP8SLQMoMbW.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/products/efJD4vc3uBXCpHDBJkOCXGXGgKU9EMiCsMRcn7wW.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/products/mTJmGGz7KA5fahy8go9ggV41eJpMaeIZDzrgaSVd.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/products/vZIZQeG2R6Aypl5oqqrExL2BDud9Y4nvvx8hsxyu.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/services/7nB0768kXRgJ2HjFbaMep3x6oCyKQ8RvQMItFGjq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/services/FhjdOvnZKJfKpHxkvqGI4yb4QAuwDqdLRTePvU2T.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/services/Ft2I35RvjELV70fwEGFODtjYtuISN5sRky9HMocb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/services/HTL71YuojOOPNbWn3VEcxpUnqrNK9ESuqkXIym1B.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/slider/6kTjNTqLI90vgP9DMA9JCpv3NIsJ4gdkUf3IRL3K.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/slider/ti4ZgBbONZ110cf8GMEwUYwna0JIssYqXKlFcnjv.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/team-members/09H4TmqKlmTZVBJbHBH5wJ2So3yCxWyXB4CLd15V.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/team-members/PCkoDNJ6Oo42f6bUfZGRYoT3ioDJwun4hnY8H2fS.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/team-members/f6WFdzu6yu4VlUm73dB1OZRXdGSXN8IFfyBkLCen.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/team-members/vs2wPGh7JcSQ3cXEaF6wJ55n4K4LtjxDK6Z0YOKa.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/testimonials/3ji2rQeR1d7htSaEhRh4L78ZQvXgTiRFMRxW4kgj.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/app/public/testimonials/Hc5MUtcridW4VDtvFQiKypZEMnjlZohY7a1xxG3P.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/SettingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SettingController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/WebsiteSettingsSeed.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/WebsiteSettingsSeed.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/layouts/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/layouts/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/layouts/menu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/settings/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/settings/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/settings/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/settings/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/settings/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/settings/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/layouts/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/.gitignore" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +64,16 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\xampp\htdocs\volcano_ecommerce\.idea" />
+      </set>
+    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -122,6 +184,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1hs3nzLBjh2g8G8GEbHaIB2Xa6x" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -168,7 +231,9 @@
       <updated>1600786163483</updated>
       <workItem from="1600786233816" duration="9682000" />
       <workItem from="1600814096553" duration="26017000" />
-      <workItem from="1600955024862" duration="4103000" />
+      <workItem from="1600955024862" duration="4735000" />
+      <workItem from="1601202693485" duration="53000" />
+      <workItem from="1601289156373" duration="3005000" />
     </task>
     <servers />
   </component>
@@ -188,13 +253,17 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="604" y="356" key="NewPhpFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1600862405055" />
-    <state x="465" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1600814095435">
+    <state x="465" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1601202771752">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="465" y="256" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1600814095435" />
+    <state x="465" y="256" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1601202771752" />
     <state x="425" y="197" key="run.anything.popup" timestamp="1600867713178">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1600867713178" />
+    <state x="425" y="85" width="670" height="676" key="search.everywhere.popup" timestamp="1601292007524">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="425" y="85" width="670" height="676" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1601292007524" />
   </component>
 </project>

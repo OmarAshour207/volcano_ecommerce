@@ -25,6 +25,7 @@ class SettingController extends Controller
             $pageFilter = serialize($request->filter_page);
             $websiteSetting->page_filter = $pageFilter;
         }
+        $websiteSetting->color = 1;
         $websiteSetting->save();
 
         session()->flash('success', __('admin.added_successfully'));
@@ -47,7 +48,7 @@ class SettingController extends Controller
             $pageFilter = serialize($request->filter_page);
             $websiteSetting->page_filter = $pageFilter;
         }
-        $websiteSetting->color = $request->color;
+        $websiteSetting->color = 1;
         $websiteSetting->update();
         session()->flash('success', __('admin.updated_successfully'));
         return redirect()->route('website-settings.index');
