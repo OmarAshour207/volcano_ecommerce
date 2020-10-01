@@ -36,7 +36,7 @@
         <!--====== SHOP OFFER PART START ======-->
 
         @if(in_array('offers', $page_filter))
-            <section class="shop-offer-area pb-120">
+        <section class="shop-offer-area pb-120">
             <div class="container-fluid p-0">
                 <div class="row justify-content-center">
                     @foreach($offers as $offer)

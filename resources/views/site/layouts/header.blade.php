@@ -68,11 +68,25 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="#"> category <i class="ti-angle-down"></i></a>
                                         <ul class="sub-menu">
-                                            @foreach(\App\Models\Category::limit(6)->get() as $index => $category)
+                                            @foreach(\App\Models\Category::where('parent_id', null)->with('child')->limit(6)->get() as $index => $category)
                                                 <li>
                                                     <a href="{{ route('category.products', ['id' => $category->id, 'title' => $category->name]) }}">
                                                         {{ $category->name }}
+                                                        @if ($category->child->count() > 0)
+                                                            <i class="ti-angle-right"></i>
+                                                        @endif
                                                     </a>
+                                                    @if ($category->child->count() > 0)
+                                                        <ul class="sub-menu">
+                                                            @foreach($category->child as $child)
+                                                                <li>
+                                                                    <a href="{{ route('category.products', ['id' => $child->id, 'title' => $child->name]) }}">
+                                                                        {{ $child->name }}
+                                                                    </a>
+                                                                </li>
+                                                            @endforeach
+                                                        </ul>
+                                                    @endif
                                                 </li>
                                             @endforeach
                                         </ul>

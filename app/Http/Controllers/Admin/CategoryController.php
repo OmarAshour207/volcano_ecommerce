@@ -10,19 +10,23 @@ class CategoryController extends Controller
 {
     public function index()
     {
-        $categories = Category::orderBy('id', 'desc')->paginate(10);
+        $categories = Category::with('parent')->orderBy('id', 'desc')->paginate(10);
         return view('dashboard.categories.index', compact('categories'));
     }
 
     public function create()
     {
-        return view('dashboard.categories.create');
+        $parentCategories = Category::where('parent_id', null)
+            ->orderBy('id', 'desc')
+            ->get();
+        return view('dashboard.categories.create', compact('parentCategories'));
     }
 
     public function store(Request $request)
     {
         $data = $request->validate([
-            'name'       => 'required|string',
+            'name'          => 'required|string',
+            'parent_id'     => 'sometimes|nullable|numeric'
         ]);
 
         Category::create($data);
@@ -32,13 +36,20 @@ class CategoryController extends Controller
 
     public function edit(Category $category)
     {
-        return view('dashboard.categories.edit', compact('category'));
+        $parentCategories = Category::where('parent_id', null)
+            ->where('id', '!=', $category->id)
+            ->orderBy('id', 'desc')
+            ->get();
+
+        return view('dashboard.categories.edit',
+                compact('category', 'parentCategories'));
     }
 
     public function update(Category $category, Request $request)
     {
         $data = $request->validate([
-            'name'       => 'required|string',
+            'name'          => 'required|string',
+            'parent_id'     => 'sometimes|nullable|numeric'
         ]);
 
         $category->update($data);

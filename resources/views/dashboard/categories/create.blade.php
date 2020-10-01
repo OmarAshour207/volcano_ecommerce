@@ -28,6 +28,16 @@
                         <input type="text" id="name" name="name" class="form-control" placeholder="{{ trans('admin.category') }} / {{ trans('admin.name') }}..." value="{{ old('name') }}">
                     </div>
 
+                    <div class="form-group">
+                        <label for="name"> {{ trans('admin.category') }} / Parent </label>
+                        <select class="form-control select2" name="parent_id">
+                            <option value="">Parent</option>
+                            @foreach($parentCategories as $parent)
+                                <option value="{{ $parent->id }}"> {{ $parent->name }} </option>
+                            @endforeach
+                        </select>
+                    </div>
+
                     <div class="text-right mb-5">
                         <input type="submit" name="add" class="btn btn-success" value="{{ trans('admin.add') }}">
                     </div>

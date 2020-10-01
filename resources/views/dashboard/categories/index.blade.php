@@ -33,9 +33,10 @@
                                 </div>
                             </th>
 
-                            <th style="width: 30px;" > {{ trans('admin.id') }} </th>
-                            <th style="width: 120px;" > {{ trans('admin.name') }} </th>
-                            <th style="width: 30px;" > {{ trans('admin.action') }} </th>
+                            <th style="width: 30px;"> {{ trans('admin.id') }} </th>
+                            <th style="width: 120px;"> {{ trans('admin.name') }} </th>
+                            <th style="width: 120px;"> Parent </th>
+                            <th style="width: 30px;"> {{ trans('admin.action') }} </th>
                         </tr>
                         </thead>
                         <tbody class="list" id="companies">
@@ -56,6 +57,14 @@
                                 <div class="d-flex align-items-center">
                                     <div class="d-flex align-items-center">
                                         {{ $category->name  }}
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td style="width: 120px;">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        {{ $category->parent_id == null ? 'Parent' : $category->parent->name  }}
                                     </div>
                                 </div>
                             </td>

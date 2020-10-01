@@ -31,8 +31,6 @@ class HomeController extends Controller
     {
         $this->checkVisitor();
 
-        session('lang') ?? session()->put('lang', app()->getLocale());
-
         $websiteSettings = WebsiteSetting::first();
         $page_filter = $websiteSettings->page_filter != null ? unserialize($websiteSettings->page_filter) : '';
         $aboutUs = About::first();
@@ -42,9 +40,14 @@ class HomeController extends Controller
         $blogs = Blog::orderBy('id', 'desc')->limit(3)->get();
         $sliders = Slider::orderBy('id', 'desc')->limit(2)->get();
         $offers = Offer::orderBy('id', 'desc')->limit(3)->get();
-        $categories = Category::orderBy('id', 'desc')->limit(4)->get();
+        $categories = Category::with('child')
+                ->where('parent_id', null)
+                ->orderBy('id', 'desc')
+                ->limit(4)
+                ->get();
         $products = Product::orderBy('id', 'desc')->limit(4)->get();
 
+//        $subCategories = $this->subCategories($categories);
         $services_count = Service::all()->count();
 
         return view('site.home',
@@ -54,6 +57,18 @@ class HomeController extends Controller
                             'blogs', 'services_count',
                             'offers', 'categories',
                             'products'));
+    }
+
+    public function subCategories($categories)
+    {
+        foreach ($categories as $parent) {
+            if ($parent->child->count() > 0) {
+                foreach ($parent->child as $child) {
+                    var_dump($child->name);
+                }
+            }
+        }
+        dd();
     }
 
     public function checkVisitor()
@@ -139,6 +154,8 @@ class HomeController extends Controller
 
     public function categoryProducts(Request $request)
     {
+        $this->checkVisitor();
+
         $products = Product::whenSearchPrice($request->price)
                 ->whenSearchName($request->name)
                 ->where('category_id', $request->route('id'))
