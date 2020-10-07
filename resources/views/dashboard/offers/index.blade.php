@@ -87,6 +87,7 @@
                             </td>
                         </tr>
                         @endforeach
+                            {{ $offers->appends(request()->query())->links() }}
                         @else
                             <h1> {{ trans('admin.no_records') }} </h1>
                         @endif

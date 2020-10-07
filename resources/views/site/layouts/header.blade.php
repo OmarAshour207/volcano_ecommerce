@@ -68,7 +68,7 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="#"> category <i class="ti-angle-down"></i></a>
                                         <ul class="sub-menu">
-                                            @foreach(\App\Models\Category::where('parent_id', null)->with('child')->limit(6)->get() as $index => $category)
+                                            @foreach(\App\Models\Category::where('parent_id', null)->with('child')->limit(10)->get() as $index => $category)
                                                 <li>
                                                     <a href="{{ route('category.products', ['id' => $category->id, 'title' => $category->name]) }}">
                                                         {{ $category->name }}
