@@ -83,6 +83,13 @@
                 </li>
 
                 <li class="sidebar-menu-item">
+                    <a class="sidebar-menu-button" href="{{ route('attributes.index') }}">
+                        <i class="sidebar-menu-icon sidebar-menu-icon--left  fa fa-list"></i>
+                        <span class="sidebar-menu-text">  Attributes </span>
+                    </a>
+                </li>
+
+                <li class="sidebar-menu-item">
                     <a class="sidebar-menu-button" href="{{ route('offers.index') }}">
                         <i class="sidebar-menu-icon sidebar-menu-icon--left  fa fa-flag"></i>
                         <span class="sidebar-menu-text">  {{ __('admin.offers') }} </span>

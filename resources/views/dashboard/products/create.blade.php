@@ -118,6 +118,16 @@
                     </div>
 
                     <div class="form-group">
+                        <label for="attribute"> {{ trans('admin.product') }} / Attribute</label>
+                        <select name="attributes[]" class="form-control select2" multiple="multiple">
+                            <option value=""> Select Attributes </option>
+                            @foreach($attributes as $attribute)
+                                <option value="{{ $attribute->id }}"> {{ $attribute->name }} </option>
+                            @endforeach
+                        </select>
+                    </div>
+
+                    <div class="form-group">
                         <label for="document">{{ trans('admin.product') }} / {{ trans('admin.photos') }}</label>
                         <div class="needsclick dropzone" id="document-dropzone">
                         </div>

@@ -137,6 +137,17 @@
                         </select>
                     </div>
 
+                    <div class="form-group">
+                        <label for="attribute"> {{ trans('admin.product') }} / Attribute</label>
+                        <select class="form-control select2" name="attributes[]" multiple>
+                            <option value=""> Select Attributes </option>
+                            @foreach($attributes as $attribute)
+
+                                <option value="{{ $attribute->id }}" {{ in_array($attribute->id, $product->attributes->pluck('id')->toArray()) ? 'selected' : '' }}> {{ $attribute->name }} </option>
+                            @endforeach
+                        </select>
+                    </div>
+
 
                     <div class="form-group">
                         <label for="document">{{ trans('admin.product') }} / {{ trans('admin.photos') }}</label>

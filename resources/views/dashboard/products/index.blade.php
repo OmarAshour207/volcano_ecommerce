@@ -15,6 +15,11 @@
                 </div>
                 <a href="{{ route('products.create') }}" class="btn btn-success ml-3">{{ trans('admin.create') }} <i class="material-icons">add</i></a>
             </div>
+            <form class="search-form d-none d-sm-flex flex">
+                <button class="btn" type="submit"><i class="material-icons">search</i></button>
+                <input type="text" name="search" value="{{ request('search') ?? '' }}" class="form-control" placeholder="Search using Name">
+            </form>
+            <br>
         </div>
 
         <div class="container-fluid page__container">
@@ -40,8 +45,8 @@
                             <th style="width: 40px;" > {{ trans('admin.rate') }} </th>
                             <th style="width: 40px;" > {{ trans('admin.price') }} </th>
                             <th style="width: 40px;" > {{ trans('admin.offer_price') }} </th>
-                            <th style="width: 40px;" > {{ trans('admin.category') }} </th>
                             <th style="width: 40px;" > {{ trans('admin.status') }} </th>
+                            <th style="width: 40px;" > {{ trans('admin.category') }} </th>
                             <th style="width: 120px;" >{{ trans('admin.image') }}</th>
                             <th style="width: 30px;" > {{ trans('admin.action') }} </th>
                         </tr>

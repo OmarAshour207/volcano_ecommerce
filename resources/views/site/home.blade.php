@@ -101,6 +101,13 @@
                                             {{ $product->title }}
                                         </a>
                                     </span>
+                                    <span>
+                                        @foreach($product->attributes as $attribute)
+                                            <a href="{{ route('attribute.show', ['id' => $attribute->id, 'title' => $attribute->name]) }}" class="attributes">
+                                                {{ $attribute->name }}
+                                            </a>
+                                        @endforeach
+                                    </span>
                                     <div class="cart-item">
                                         <a href="#">
                                             <i class="ti-shopping-cart-full"></i>
@@ -202,6 +209,13 @@
                                                 <a href="{{ route('product.show', ['id' => $product->id, 'title' => $product->title]) }}">
                                                     {{ $product->title }}
                                                 </a>
+                                            </span>
+                                            <span>
+                                                @foreach($product->attributes as $attribute)
+                                                    <a href="{{ route('attribute.show', ['id' => $attribute->id, 'title' => $attribute->name]) }}" class="attributes">
+                                                        {{ $attribute->name }}
+                                                    </a>
+                                                @endforeach
                                             </span>
                                             <div class="cart-item">
                                                 <a href="{{ route('product.show', ['id' => $product->id, 'title' => $product->title]) }}">
@@ -370,3 +384,9 @@
         <!--====== SUBSCRIBE PART ENDS ======-->
     @endif
 @endsection
+
+@push('styles')
+    <style>
+        .attributes {text-decoration: underline !important;}
+    </style>
+@endpush

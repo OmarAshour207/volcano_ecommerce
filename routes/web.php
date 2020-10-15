@@ -19,6 +19,8 @@ Route::post('subscribe', 'SubscriberController@send')->name('send.subscriber');
 Route::get('products', 'ProductController@showProducts');
 Route::get('product/{id}/{title}', 'ProductController@showProduct')->name('product.show');
 
+Route::get('attribute/{id}/{title}', 'ProductController@showAttribute')->name('attribute.show');
+
 Route::get('category/{id}/{title}', 'HomeController@categoryProducts')->name('category.products');
 
 // Admin ROUTES
@@ -46,6 +48,8 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => 'auth
     Route::resource('contactus', 'ContactUsController');
 
     Route::resource('categories', 'CategoryController');
+
+    Route::resource('attributes', 'AttributeController');
 
     Route::resource('offers', 'OfferController');
 

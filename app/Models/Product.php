@@ -46,4 +46,22 @@ class Product extends Model
             return $q->where('id', $id);
         });
     }
+
+
+    // Scopes-------------------------------------------
+
+    public function scopeWhenAttribute($query, $attribute)
+    {
+        return $query->when($attribute, function ($q) use ($attribute){
+            return $q->whereHas('attributes', function ($qu) use ($attribute){
+                return $qu->whereIn('attribute_id', (array)$attribute);
+            });
+        });
+    }
+
+    // Relations
+    public function attributes()
+    {
+        return $this->belongsToMany(Attribute::class, 'product_attribute');
+    }
 }

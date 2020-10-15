@@ -3,23 +3,30 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Attribute;
 use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Symfony\Component\Console\Input\Input;
 
 class ProductController extends Controller
 {
     public function index()
     {
-        $products = Product::with('category')->orderBy('id', 'desc')->paginate(10);
+        $products = Product::whenSearchName(\request('search'))
+            ->with('category')
+            ->orderBy('id', 'desc')
+            ->paginate(10);
         return view('dashboard.products.index', compact('products'));
     }
 
     public function create()
     {
         $categories = Category::orderBy('id', 'desc')->get();
-        return view('dashboard.products.create', compact('categories'));
+        $attributes = Attribute::orderBy('id', 'desc')->get();
+        return view('dashboard.products.create',
+                compact('categories', 'attributes'));
     }
 
     public function store(Request $request)
@@ -40,7 +47,8 @@ class ProductController extends Controller
         }
         $data['image'] = $images;
 
-        Product::create($data);
+        $product = Product::create($data);
+        $product->attributes()->sync($request->input('attributes'));
         session()->flash('success', 'Added Successfully');
         return redirect()->route('products.index');
     }
@@ -48,8 +56,9 @@ class ProductController extends Controller
     public function edit(Product $product)
     {
         $categories = Category::orderBy('id', 'desc')->get();
+        $attributes = Attribute::orderBy('id', 'desc')->get();
         return view('dashboard.products.edit',
-                compact('categories', 'product'));
+                compact('categories', 'product', 'attributes'));
     }
 
     public function update(Request $request, Product $product)
@@ -71,6 +80,7 @@ class ProductController extends Controller
         $data['image'] = $images;
 
         $product->update($data);
+        $product->attributes()->sync($request->input('attributes'));
         session()->flash('success', 'Updated Successfully');
         return redirect()->route('products.index');
     }

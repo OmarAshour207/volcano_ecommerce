@@ -45,7 +45,7 @@ class HomeController extends Controller
                 ->orderBy('id', 'desc')
                 ->limit(4)
                 ->get();
-        $products = Product::orderBy('id', 'desc')->limit(4)->get();
+        $products = Product::with('attributes')->orderBy('id', 'desc')->limit(4)->get();
 
 //        $subCategories = $this->subCategories($categories);
         $services_count = Service::all()->count();
@@ -156,7 +156,8 @@ class HomeController extends Controller
     {
         $this->checkVisitor();
 
-        $products = Product::whenSearchPrice($request->price)
+        $products = Product::with('attributes')
+                ->whenSearchPrice($request->price)
                 ->whenSearchName($request->name)
                 ->where('category_id', $request->route('id'))
                 ->paginate(12);

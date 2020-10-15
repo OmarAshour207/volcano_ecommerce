@@ -119,6 +119,15 @@
                                                                 {{ $product->title }}
                                                             </a>
                                                         </span>
+
+                                                        <span>
+                                                            @foreach($product->attributes as $attribute)
+                                                            <a href="{{ route('attribute.show', ['id' => $attribute->id, 'title' => $attribute->name]) }}" style="text-decoration: underline">
+                                                                {{ $attribute->name }}
+                                                            </a>
+                                                            @endforeach
+                                                        </span>
+
                                                         <div class="cart-item">
                                                             <a href="{{ route('product.show', ['id' => $product->id, 'title' => $product->title]) }}">
                                                                 <i class="ti-shopping-cart-full"></i> <span><span>${{ $product->offer_price }}</span> -${{ $product->price }}</span>
@@ -166,6 +175,17 @@
                                                                     @for($i = 0;$i < $product->rate;$i++)
                                                                         <li><a href="{{ route('product.show', ['id' => $product->id, 'title' => $product->title]) }}"><i class="fa fa-star"></i></a></li>
                                                                     @endfor
+                                                                </ul>
+                                                            </div>
+                                                            <div class="icon">
+                                                                <ul>
+                                                                    @foreach($product->attributes as $attribute)
+                                                                        <li>
+                                                                            <a href="{{ route('attribute.show', ['id' => $attribute->id, 'title' => $attribute->name]) }}">
+                                                                                {{ $attribute->name }}
+                                                                            </a>
+                                                                        </li>
+                                                                    @endforeach
                                                                 </ul>
                                                             </div>
                                                             <p>{{ $product->description }}</p>
