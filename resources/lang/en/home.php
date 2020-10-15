@@ -122,4 +122,5 @@ return [
     'property_info'         => 'Property Information',
     'property_home'         => 'Home',
     'more_info'             => 'More Information',
+    'currency'              => '£',
 ];

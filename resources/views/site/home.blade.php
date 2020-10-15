@@ -220,7 +220,7 @@
                                             <div class="cart-item">
                                                 <a href="{{ route('product.show', ['id' => $product->id, 'title' => $product->title]) }}">
                                                     <i class="ti-shopping-cart-full"></i>
-                                                    <span><span>${{ $product->offer_price }}</span> -${{ $product->price }}</span>
+                                                    <span><span>{{ __('home.currency') }}{{ $product->offer_price }}</span> -{{ __('home.currency') }}{{ $product->price }}</span>
                                                 </a>
                                             </div>
                                         </div>
