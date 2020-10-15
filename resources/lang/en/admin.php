@@ -168,4 +168,5 @@ return [
     'limited_offers'        => 'Limited Offers',
     'subscribe_area'        => 'Subscribe Area',
     'choose_color'          => 'Choose Color',
+    'photos'                => 'Photos'
 ];

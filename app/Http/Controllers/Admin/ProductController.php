@@ -23,8 +23,9 @@ class ProductController extends Controller
 
     public function create()
     {
-        $categories = Category::orderBy('id', 'desc')->get();
+        $categories = Category::where('parent_id', '!=', null)->orderBy('id', 'desc')->get();
         $attributes = Attribute::orderBy('id', 'desc')->get();
+
         return view('dashboard.products.create',
                 compact('categories', 'attributes'));
     }
